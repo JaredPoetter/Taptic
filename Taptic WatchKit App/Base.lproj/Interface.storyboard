@@ -1,14 +1,67 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Taptic_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="vJ3-hA-o9H"/>
+                        <button width="136" height="13" alignment="left" title="Notification" id="CKf-ez-yMl">
+                            <connections>
+                                <action selector="notificationButton" destination="AgC-eL-Hgc" id="YHG-ZD-g3D"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="13" alignment="left" title="DirectionUp" id="xMp-XJ-BPb">
+                            <connections>
+                                <action selector="directionUpButton" destination="AgC-eL-Hgc" id="7gO-Zw-tCU"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="13" alignment="left" title="DirectionDown" id="0Lg-qd-58l">
+                            <connections>
+                                <action selector="directionDownButton" destination="AgC-eL-Hgc" id="2Nr-CW-eRr"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="13" alignment="left" title="Success" id="W5M-oC-JKy">
+                            <connections>
+                                <action selector="successButton" destination="AgC-eL-Hgc" id="CoQ-X2-bUR"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="13" alignment="left" title="Failure" id="8K0-LM-3La">
+                            <connections>
+                                <action selector="failureButton" destination="AgC-eL-Hgc" id="COb-QG-Lwo"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="13" alignment="left" title="Retry" id="Qky-wN-bb1">
+                            <connections>
+                                <action selector="retryButton" destination="AgC-eL-Hgc" id="yZU-AL-F8V"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="13" alignment="left" title="Start" id="O81-qK-mOw">
+                            <connections>
+                                <action selector="startButton" destination="AgC-eL-Hgc" id="dJs-nZ-HXY"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="13" alignment="left" title="Stop" id="3pC-7z-ef5">
+                            <connections>
+                                <action selector="stopButton" destination="AgC-eL-Hgc" id="xZs-nh-Ho7"/>
+                            </connections>
+                        </button>
+                        <button width="136" height="13" alignment="left" title="Click" id="9eh-01-7P8">
+                            <connections>
+                                <action selector="clickButton" destination="AgC-eL-Hgc" id="rAk-2w-aOW"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -31,7 +84,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Taptic_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
